@@ -19,7 +19,7 @@ body {
   margin: 0;
   /* font-family: 'EB Garamond', serif; */
   color: #1c1515;
-  font-size: 18px;
+  font-size: 16px;
   max-width: 100%;
   /* border:3px solid orange; */
 }
@@ -80,7 +80,6 @@ p {
 nav {
   display: flex;
   align-items: center;
-
   font-family: "Quicksand", sans-serif;
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
@@ -167,6 +166,9 @@ nav li a {
 
 .about-section {
   padding: 15px 0 15px  0;
+  background-color: #fafafa
+
+
 }
 
 /* -------------WORKS------------------- */
@@ -180,8 +182,8 @@ nav li a {
 
 .works-section .container {
   display: flex;
-  align-items: center;
-  text-align: center;
+   align-items: center;
+  /* text-align: center;  */
   width: 100%;
   flex-wrap: wrap;
 
@@ -197,8 +199,8 @@ nav li a {
 
 .works-section .container article img {
   min-width: 300px;
-  max-width: 500px;
-  /* width: 50%; */
+  max-width: 600px;
+  width: 50%;
   /* border:3px solid red; */
 }
 
@@ -211,7 +213,7 @@ nav li a {
 }
 .row-2 {
   /* border: 4px solid #1c1515; */
-  width: 50%;
+  width: 100%;
   display: flex;
 }
 .column {
@@ -220,24 +222,19 @@ nav li a {
   flex-basis: 100%;
   flex: 1;
 }
-@media screen and (max-width: 600px) {
-  .works-section .container article img {
-
-    width: 50%;
-}
-.row-2 {
-  width: 100%;
-}
-}
 
 /* -------------LET'S SPEAK - FOOTER------------------- */
 
-footer {
+#letstalk {
   padding: 15px 0 10% 0;
+  display: flex;
   width: 100%;
-
-  /* border: 3px solid purple; */
+  background-color: #fafafa;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 3px solid purple;
 }
+
 
 footer .flex-container {
   display: flex;
@@ -245,6 +242,8 @@ footer .flex-container {
   max-width: 450px;
   justify-content: space-between;
   font-family: "Quicksand", sans-serif;
+  padding: 0px;
+
 }
 
 footer .flex-container li {
@@ -263,12 +262,23 @@ footer .flex-container li {
     min-height: 30vh;
     display: flex;
     align-items: center;
-    /* border: 3px solid yellow; */
-    width: 100%;
+    margin: 0 auto 0 auto; 
+    width: 90%;
   }
 
   .col-2 {
     width: 50%;
+  }
+  .works-section .container article img {
+    width: 100%;
+  }
+  .row-1 {
+    width: 100%;
+
+  }
+  .row-2 {
+  width: 50%;
+  margin-top: 30px;
   }
 
   /*---------Specific Styles------------*/
